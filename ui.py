@@ -49,7 +49,7 @@ def detail_page():
     st.write(item["description"])
 
     st.subheader("Noun Phrases")
-    st.write(", ".join(item["keyword"]["noun_phrases"]))
+    st.write(", ".join(item["keyword"]["extracted_research"]))
 
     for level in ["lv0", "lv1", "lv2", "lv3"]:
         st.subheader(f"Level {level}")
